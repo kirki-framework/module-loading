@@ -11,6 +11,8 @@
 
 namespace Kirki\Modules\Loading;
 
+use Kirki\Core\Kirki;
+
 /**
  * Modifies the loading overlay.
  */
