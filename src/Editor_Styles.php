@@ -9,7 +9,7 @@
  * @since       3.0.0
  */
 
-namespace Kirki\Modules\Loading;
+namespace Kirki\Module;
 
 use Kirki\Core\Kirki;
 use Kirki\URL;
@@ -17,7 +17,7 @@ use Kirki\URL;
 /**
  * Modifies the loading overlay.
  */
-class Module {
+class Editor_Styles {
 
 	/**
 	 * The object instance.
