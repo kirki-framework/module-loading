@@ -20,38 +20,12 @@ use Kirki\URL;
 class Loading {
 
 	/**
-	 * The object instance.
-	 *
-	 * @static
-	 * @access private
-	 * @since 3.0.0
-	 * @var object
-	 */
-	private static $instance;
-
-	/**
 	 * Constructor.
 	 *
-	 * @access protected
-	 */
-	protected function __construct() {
-		add_action( 'init', [ $this, 'init' ] );
-	}
-
-	/**
-	 * Gets an instance of this object.
-	 * Prevents duplicate instances which avoid artefacts and improves performance.
-	 *
-	 * @static
 	 * @access public
-	 * @since 3.0.0
-	 * @return object
 	 */
-	public static function get_instance() {
-		if ( ! self::$instance ) {
-			self::$instance = new self();
-		}
-		return self::$instance;
+	public function __construct() {
+		add_action( 'init', [ $this, 'init' ] );
 	}
 
 	/**
