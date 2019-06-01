@@ -17,7 +17,7 @@ use Kirki\URL;
 /**
  * Modifies the loading overlay.
  */
-class Editor_Styles {
+class Loading {
 
 	/**
 	 * The object instance.
